@@ -6,14 +6,14 @@ import logging
 
 import time
 
-from credentials import *  # use this one for testing
+#from credentials import *  # use this one for testing
 
 # use this for production; set vars in heroku dashboard
-#from os import environ
-#CONSUMER_KEY = environ['CONSUMER_KEY']
-#CONSUMER_SECRET = environ['CONSUMER_SECRET']
-#ACCESS_KEY = environ['ACCESS_KEY']
-#ACCESS_SECRET = environ['ACCESS_SECRET']
+from os import environ
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
 
 
 logging.basicConfig(level=logging.INFO)
