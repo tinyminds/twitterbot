@@ -19,7 +19,7 @@ ACCESS_SECRET = os.environ.get('ACCESS_SECRET')
 
 INTERVAL = 60 * 60 * 6  # tweet every 6 hours
 #INTERVAL = 15  # every 15 seconds, for testing
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.ERROR)
 logger = logging.getLogger()
 
 def check_mentions(api, keywords, since_id):
