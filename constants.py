@@ -33,6 +33,8 @@ BODY_PARTS = [
     'nostril',
     'bum',
     'face',
+    'wrist',
+    'shin',
 ]
 
 ADJECTIVES = [
@@ -66,6 +68,7 @@ SUPERLATIVES = [
     'compulsive',
     'noisey',
     'stinky',
+    'insufficient',
 ]
 
 SYMPTOMS = [
@@ -80,6 +83,9 @@ SYMPTOMS = [
     'vertigo',
     'dizziness',
     'ringing in the ears',
+    'pooping',
+    'crying',
+    'restlessness',
 ]
 # from https://simple.wikipedia.org/wiki/List_of_colors
 

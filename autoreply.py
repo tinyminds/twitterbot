@@ -17,7 +17,7 @@ CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET')
 ACCESS_KEY = os.environ.get('ACCESS_KEY')
 ACCESS_SECRET = os.environ.get('ACCESS_SECRET')
 
-INTERVAL = 60 * 60 * 2  # tweet every 6 hours
+INTERVAL = 60 * 60 * 6  # tweet every 6 hours
 #INTERVAL = 15  # every 15 seconds, for testing
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
