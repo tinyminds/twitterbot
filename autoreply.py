@@ -52,7 +52,7 @@ def main():
         print("about to get ad...")
         ad = get_ad()
         api.update_status(ad)
-        since_id = check_mentions(api, ["hello", "shut up", "hullo", "hi", "hiya"], since_id)
+        since_id = check_mentions(api, ["hello", "shut up", "hullo", "hi", "hiya", "yo"], since_id)
         logger.info("Waiting...")
         time.sleep(INTERVAL)
 if __name__ == "__main__":
