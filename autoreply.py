@@ -8,14 +8,14 @@ import sys
 import os
 
 from generate_advertisement import get_ad
-from credentials import *  # use this one for testing
+#from credentials import *  # use this one for testing
 
 # use this for production; set vars in heroku dashboard
 
-#CONSUMER_KEY = os.environ.get('CONSUMER_KEY')
-#CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET')
-#ACCESS_KEY = os.environ.get('ACCESS_KEY')
-#ACCESS_SECRET = os.environ.get('ACCESS_SECRET')
+CONSUMER_KEY = os.environ.get('CONSUMER_KEY')
+CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET')
+ACCESS_KEY = os.environ.get('ACCESS_KEY')
+ACCESS_SECRET = os.environ.get('ACCESS_SECRET')
 
 INTERVAL = 60 * 60 * 6  # tweet every 6 hours
 #INTERVAL = 15  # every 15 seconds, for testing
