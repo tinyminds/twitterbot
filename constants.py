@@ -31,6 +31,8 @@ BODY_PARTS = [
     'cornea',
     'buttock',
     'nostril',
+    'bum',
+    'face',
 ]
 
 ADJECTIVES = [
@@ -50,6 +52,8 @@ ADJECTIVES = [
     'strained',
     'overexerted',
     'herniated',
+    'stupid',
+    'fatty',
 ]
 
 SUPERLATIVES = [
@@ -60,6 +64,8 @@ SUPERLATIVES = [
     'intense',
     'troublesome',
     'compulsive',
+    'noisey',
+    'stinky',
 ]
 
 SYMPTOMS = [
