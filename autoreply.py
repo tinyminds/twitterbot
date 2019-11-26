@@ -45,10 +45,10 @@ def main():
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
     api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
-    #print("about to get ad...")
-    #ad = get_ad()
-    #api.update_status(ad)
-    #time.sleep(INTERVAL)
+    print("about to get ad...")
+    ad = get_ad()
+    api.update_status(ad)
+    time.sleep(INTERVAL)
     since_id = 1
     while True:
         since_id = check_mentions(api, ["hello", "shut up", "hullo", "hi", "hiya"], since_id)
