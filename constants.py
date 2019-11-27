@@ -56,6 +56,7 @@ ADJECTIVES = [
     'herniated',
     'stupid',
     'fatty',
+    'lumpy',
 ]
 
 SUPERLATIVES = [
@@ -69,6 +70,8 @@ SUPERLATIVES = [
     'noisey',
     'stinky',
     'insufficient',
+    'lax',
+    'weak',
 ]
 
 SYMPTOMS = [

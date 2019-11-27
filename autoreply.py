@@ -31,7 +31,7 @@ def check_mentions(api, keywords, since_id):
         if tweet.in_reply_to_status_id is not None:
             continue
         if any(keyword in tweet.text.lower() for keyword in keywords):
-            logger.info(f"Answering to {tweet.user.screen_name}")
+            logger.info(f"Answering to {tweet.user.screen_name} - {new_since_id}")
 
             if not tweet.user.following:
                 tweet.user.follow()
@@ -49,11 +49,12 @@ def main():
     since_id = 1
     logger.info(since_id)
     while True:
-        print("about to get ad...")
-        ad = get_ad()
-        api.update_status(ad)
-        since_id = check_mentions(api, ["hello", "shut up", "hullo", "hi", "hiya", "yo"], since_id)
+        #print("about to get ad...")
+        #ad = get_ad()
+        #api.update_status(ad)
+        since_id = check_mentions(api, ["hello", "shut up", "hullo", "hi", "hiya", "yo", "morning"], since_id)
         logger.info("Waiting...")
-        time.sleep(INTERVAL)
+        logger.info(since_id)
+        time.sleep(300)
 if __name__ == "__main__":
     main()
