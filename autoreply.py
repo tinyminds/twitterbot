@@ -46,7 +46,7 @@ def main():
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
     api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
-    since_id = 1
+    since_id = 1199774713800790016
     logger.info(since_id)
     while True:
         #print("about to get ad...")
