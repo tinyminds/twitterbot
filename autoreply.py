@@ -47,14 +47,10 @@ def main():
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
     api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
-    since_id = SINCE_ID
+    since_id = SINCE_ID #reset env variable with last id if it crashes. find a better way. date?
     logger.info(since_id)
     while True:
-        #print("about to get ad...")
-        #ad = get_ad()
-        #api.update_status(ad)
         since_id = check_mentions(api, ["hello", "shut up", "hullo", "hi", "hiya", "yo", "morning"], since_id)
-        os.system('heroku config:set SINCE_ID=' + since_id)
         logger.info("Waiting...")
         logger.info(since_id)
         time.sleep(300)
